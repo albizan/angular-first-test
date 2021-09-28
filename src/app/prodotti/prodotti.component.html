@@ -1,0 +1,10 @@
+<h1>prodotti!</h1>
+
+<ul class="list-group">
+    <li *ngFor="let p of mieiProdotti">
+        <h2>{{p.title}}</h2>
+        <p>{{p.price}}</p>
+        <p>{{p.description}}</p>
+        <img [src]=p.image>
+    </li>
+</ul>
